@@ -1,97 +1,64 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .body {
-          background-color: rgb(255, 255, 255);    
-          text-align: center;
-          height: auto;
-          color: black;
-        }
-        .footer {
-          background-color: black; 
-          text-align: center;
-          height: auto;
-          font-size: medium;
-          font-family: Roobert,sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          padding: 10px;
-          color: white;
-        }
-        html, body {
-            margin: 0 !important;
-            padding: 0 !important;
-            height: 100%;
-        }
-        .title-1 {
-            font-family: Roobert,sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            color: black;
-            font-size: 50px;
-        }
-        .paragraph{
-            font-family: Roobert,sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            color: rgb(110, 107, 107);
-            font-size: 20px;
-        }
-        .video-container {
-          height: 500px;
-          width: auto;
-          position: relative;
-        }
-        .video-container video {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          object-fit: cover;
-          z-index: 0;
-          
-        }
-        .caption {
-          z-index: 1;
-          position: relative;
-          text-align: center;
-          color: #f8f5f5;
-          font-size: 6rem;
-          padding: 15px;
-          width: auto;
-          height: auto;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .video-overlay {
-          z-index: 1;
-          position: absolute;
-          background-color: rgb(10, 199, 242);
-          width: 100%;
-          height: 500px;
-          opacity: 0.5;
-        }
-    </style>
-    
-  </head>
-  <body>
-    <div class="video-container">
-      <div class="video-overlay"></div>
-      <video autoplay muted loop>
-          <source src="particles-6436.mp4" type="video/mp4" />
-      </video>
-      <div class="caption">
-        <p>tlatoani interactive</p>
+<html lang="en">
+<head>
+  <title>tlatoani interactive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <p>tlatoani<br>interactive</p>
+    <h2>Your next<br>interactive<br>experience</h2>
+  </a>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <p>tlatoani interactive</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <div class="main-content">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Your next<br>interactive<br>experience</h1>
+                <button class="cta">Contact Us
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.jpg" alt="Welcome">
+              </div>
+              <div class="paragraph">
+                <p>Tlatoani Interactive is focused on design and develop high quality software applications, including virtual reality, augmented reality, mobile, cloud solutions and more.</p>
+              </div>
+            </div>
+            <div class="footer">
+              <a style="color: white; font-weight: bold;" href="mailto:hello@tlatoanix.com">hello@tlatoanix.com
+                <p> 2023 Tlatoani Interactive. All rights reserved.</p>
+              </a>
+            </div>
+          </div>
       </div>
-   </div>
-    <div class="body">
-        <p class="title-1">Welcome to the next generation of inmersive technology</p>
-        <p class="paragraph">Tlatoani Interactive is focused on design and develop high quality software applications, including virtual reality, augmented reality, mobile, cloud solutions and more.</p>
-        <p class="paragraph">Tlatoani is a Nahuatl word which means ruler, king, speaker, leader</p>
     </div>
-  </body>
-  <footer class="footer">
-    <p> 2023 Tlatoani Interactive. All rights reserved.</p>
-    <a class="footer" href="mailto:hello@tlatoanix.com">hello@tlatoanix.com</a>
-  </footer>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+  </ul>
+</div>
+</body>
 </html>
