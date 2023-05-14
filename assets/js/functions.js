@@ -14,7 +14,7 @@ $( document ).ready(function() {
       var delta = (e.originalEvent.wheelDelta) ? -e.originalEvent.wheelDelta : e.originalEvent.detail * 20;
 
       if (delta > 50 && canScroll) {
-        canScroll = true;
+        canScroll = false;
         clearTimeout(scrollController);
         scrollController = setTimeout(function(){
           canScroll = true;
@@ -22,7 +22,7 @@ $( document ).ready(function() {
         updateHelper(1);
       }
       else if (delta < -50 && canScroll) {
-        canScroll = true;
+        canScroll = false;
         clearTimeout(scrollController);
         scrollController = setTimeout(function(){
           canScroll = true;
@@ -84,7 +84,7 @@ $( document ).ready(function() {
 
   // determine scroll, swipe, and arrow key direction
   function updateHelper(param) {
-/*
+
     var curActive = $('.side-nav').find('.is-active'),
         curPos = $('.side-nav').children().index(curActive),
         lastItem = $('.side-nav').children().length - 1,
@@ -113,8 +113,8 @@ $( document ).ready(function() {
         updateContent(curPos, nextPos, lastItem);
       }
     }
-*/
-  } 
+
+  }
 
   // sync side and outer navigations
   function updateNavs(nextPos) {
